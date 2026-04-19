@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Ergotherapie – Victoria Glatz, BSc | Praxis für Ergotherapie</title>
+  <meta name="description"
+    content="Ergotherapie-Praxis von Victoria Glatz, BSc. Individuelle Therapie für Kinder, Erwachsene und SeniorInnen. Termine auf Anfrage." />
+  <meta name="keywords" content="Ergotherapie, Ergotherapeutin, Praxis, Wien, Therapie, Motorik, Alltagskompetenz" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo-link">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- cap -->
+            <path d="M8 34 C8 14 52 14 52 34 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+              fill="none" />
+            <!-- cap underside / gills line -->
+            <line x1="8" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            <!-- stem -->
+            <path d="M24 34 L22 56 Q30 60 38 56 L36 34" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"
+              fill="none" />
+            <!-- skirt (annulus) -->
+            <path d="M20 42 Q30 46 40 42" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" />
+            <!-- scattered filled dots inside cap -->
+            <circle cx="18" cy="29" r="1.3" fill="currentColor" opacity="0.85" />
+            <circle cx="28" cy="23" r="1.2" fill="currentColor" opacity="0.85" />
+            <circle cx="38" cy="26" r="1.5" fill="currentColor" opacity="0.85" />
+            <circle cx="34" cy="21" r="1" fill="currentColor" opacity="0.85" />
+            <circle cx="44" cy="30" r="1.3" fill="currentColor" opacity="0.85" />
+            <circle cx="24" cy="27" r="1.1" fill="currentColor" opacity="0.85" />
+            <circle cx="33" cy="29" r="1.2" fill="currentColor" opacity="0.85" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Victoria Glatz, BSc</span>
+          <span class="logo-sub">Mobile Ergotherapie</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#ueber-mich" class="nav-link" data-section="ueber-mich">Über mich</a></li>
+          <li><a href="#therapie" class="nav-link" data-section="therapie">Therapie</a></li>
+          <li><a href="#ablauf" class="nav-link" data-section="ablauf">Ablauf &amp; Preise</a></li>
+          <li><a href="#kontakt" class="nav-link" data-section="kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="a11y-controls">
+        <button id="btn-contrast" class="a11y-btn" aria-label="Kontrastmodus umschalten" title="Hoher Kontrast">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a10 10 0 0 0 0 20z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <button id="btn-language" class="a11y-btn" aria-label="Leichte Sprache" title="Leichte Sprache">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M5 8l6 6"></path>
+            <path d="M4 14l6-6 2-3"></path>
+            <path d="M2 5h12"></path>
+            <path d="M7 2h1"></path>
+            <path d="M22 22l-5-10-5 10"></path>
+            <path d="M14 18h6"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-image-wrapper">
+      <img src="images/hero.png" alt="Ergotherapie – Hände bei der Therapie" class="hero-img" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title reveal-up">
+        Mobile Ergotherapie<br />
+        <span
+          style="color: var(--clr-primary); font-size: clamp(1.1rem, 5vw, 2.8rem); display: block; white-space: nowrap;">Neurologie,
+          Orthopädie &amp; Inklusion</span>
+      </h1>
+      <p class="hero-subtitle reveal-up" style="color: var(--clr-primary); font-size: 1.4rem; margin-top: -1rem;">
+        Hausbesuche in Hall &amp; Umgebung
+      </p>
+      <a href="#therapie" class="btn-primary reveal-up">Leistungen entdecken</a>
+    </div>
+    <a href="#therapie" class="scroll-indicator" aria-label="Nach unten scrollen">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="intro section-pad">
+    <div class="container">
+      <div class="intro-text reveal-up">
+        <h2 class="section-title">Was ist Ergotherapie?</h2>
+        <div class="standard-text">
+          <p class="lead-text">
+            Ergotherapie unterstützt Menschen jeden Alters dabei, für sie wichtige Aktivitäten wieder sicher und
+            selbstständig ausführen zu können- sei es nach einer Verletzung, Erkrankung oder zur Prävention.
+          </p>
+          <p>
+            Im Mittelpunkt steht immer der Mensch mit seinen*ihren individuellen Bedürfnissen, Wünschen und Fähigkeiten.
+            Gemeinsam erarbeiten wir Wege, um Ihre Ziele zu erreichen.
+          </p>
+        </div>
+        <div class="leichte-sprache-text">
+          <p>
+            Manche Menschen können Dinge nicht so gut selber machen.<br>
+            Weil sich manche Menschen nicht gut konzentrieren.<br>
+            Oder die Hände nicht gut bewegen.<br>
+            Die Menschen möchten die Dinge selber Machen.<br>
+            Ergotherapie hilft dabei.
+          </p>
+          <p>
+            In der Ergotherapie werden Übungen für die Hände und die Beine gemacht.<br>
+            Oder Übungen für das Gedächtnis.<br>
+            Oder ein Hilfsmittel ausprobiert.
+          </p>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- ÜBER MICH SECTION -->
+  <section class="ueber-mich section-pad section-alt" id="ueber-mich">
+    <div class="container">
+      <div class="ueber-mich-layout">
+        <div class="ueber-mich-img reveal-left">
+          <img src="images/portrait.png" alt="Victoria Glatz, BSc – Ergotherapeutin" loading="lazy" />
+          <img src="images/portrait2.png" alt="Victoria Glatz, BSc – Ergotherapeutin" loading="lazy"
+            style="margin-top: var(--space-md); border-radius: 8px;" />
+        </div>
+        <div class="ueber-mich-text reveal-right">
+          <p class="section-eyebrow">Über mich</p>
+          <h2 class="section-title standard-text">Victoria Glatz, BSc</h2>
+          <div class="standard-text">
+            <p class="lead-text" style="margin-bottom: 0.75rem;">Nach meinem Ergotherapie-Studium an der fh gesundheit
+              Tirol sammelte ich mehrere Jahre
+              Berufserfahrung im Rehazentrum Münster in den Bereichen Neurologie, Onkologie, Pulmologie und
+              psychosoziale Gesundheit. Anfang 2024 habe ich dann den Schritt in die Selbstständigkeit gewagt, um
+              therapeutische Begleitung noch
+              individueller und alltagsnaher gestalten zu können.</p>
+            <p style="margin-bottom: 0.75rem;">An meiner Arbeit schätze ich besonders, Menschen ein Stück auf ihrem Weg
+              begleiten zu dürfen und
+              gemeinsam kreative Wege zu finden, um Herausforderungen im Alltag zu bewältigen. Ein wertschätzender und
+              vertrauensvoller Zugang ist mir dabei besonders wichtig.</p>
+            <p style="margin-bottom: 0.75rem;">Mein Angebot richtet sich an Erwachsene, die nach Krankheit oder
+              Verletzung wieder mehr Selbstständigkeit
+              und Lebensqualität im Alltag gewinnen möchten.</p>
+            <p style="margin-bottom: 0.75rem;">Privat bin ich gerne und viel mit meinem Hund Bruno in den Bergen
+              unterwegs, pflege (nicht ganz
+              erfolgreich) meinen kleinen Balkon-„Garten“ oder treffe mich mit Freund*innen zu einem Spieleabend.</p>
+          </div>
+          <div class="leichte-sprache-text">
+            <p>
+              Ich heiße Victoria Glatz<br>
+              Ich habe in Tirol studiert.<br>
+              Ich habe im Rehazentrum Münster gearbeitet.<br>
+              Ich habe dort Menschen mit verschiedenen Krankheiten behandelt.
+            </p>
+            <p>Seit 2024 bin ich selbstständig.</p>
+            <p>
+              Mir macht meine Arbeit große Freude.<br>
+              Ich unterstütze Menschen bei ihren Herausforderungen.
+            </p>
+            <p>
+              In meiner Freizeit gehe ich mit meinem Hund Bruno spazieren.<br>
+              Ich habe einen kleinen Balkon mit Pflanzen.<br>
+              Ich spiele gerne Spiele mit Freunden.
+            </p>
+          </div>
+
+          <h3
+            style="margin-top: 1rem; margin-bottom: 0; font-family: var(--font-serif); font-size: 1.5rem; color: var(--clr-text); line-height: 1;">
+            Berufliche Praxis</h3>
+          <div class="qualifikationen" style="margin-top: 0.25rem;">
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span><strong>08/2022 - 02/2023</strong><br>PKA Innsbruck und Götzens</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span><strong>seit 02/2023</strong><br>Rehazentrum Münster, Fachbereich Neurologie, psychosoziale
+                Gesundheit, Onkologie und Pulmologie</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span><strong>seit 04/2024</strong><br>selbstständige Tätigkeit als Ergotherapeutin im Hausbesuch;
+                Vertragstherapeutin Schlaganfallpfad Tirol und Land Tirol</span>
+            </div>
+          </div>
+
+          <h3
+            style="margin-top: 1.5rem; margin-bottom: 0; font-family: var(--font-serif); font-size: 1.5rem; color: var(--clr-text); line-height: 1;">
+            Fort- und Weiterbildungen</h3>
+          <div class="qualifikationen" style="margin-top: 0.25rem;">
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span>Fachtherapeutin für Kognitives Training nach Dr. med. Franziska Stengl</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span>Handlungsorientierte Diagnostik und Therapie - Grundkurs</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span>Therapeutisches Bogenschießen in der Psychosomatik</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span>Übungsleiter INKLettern AV Österreich</span>
+            </div>
+            <div class="quali-item">
+              <div class="quali-dot"></div>
+              <span>Manuelle Therapie der Oberen Extremität in Ausbildung – Abschluss 11/2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THERAPIE SECTION -->
+  <section class="therapie section-pad" id="therapie">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 class="section-title">Mein Therapieangebot</h2>
+      </div>
+
+      <div class="therapy-content reveal-up">
+        <div class="therapy-section"
+          style="padding-bottom: 2.5rem; border-bottom: 2px solid var(--clr-primary); margin-bottom: 2.5rem; display: flex; gap: 1.5rem; align-items: flex-start;">
+
+          <div class="therapy-icon" style="flex-shrink: 0; width: 64px; height: 64px; color: var(--clr-primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <!-- side-view conceptual brain path based on lucide definition -->
+              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+              <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+              <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+              <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+              <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+              <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+            </svg>
+          </div>
+
+          <div class="therapy-text" style="flex: 1;">
+            <h3
+              style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--clr-text); margin-bottom: 1rem; line-height: 1.2;">
+              Neurologie</h3>
+            <div class="standard-text">
+              <p>Therapie und Rehabilitation nach Schlaganfall, Hirnverletzung oder bei neurologischen Erkrankungen. Der
+                Fokus liegt hier auf der Rückgewinnung und dem Erhalt von größtmöglicher Selbstständigkeit und
+                Alltagsfähigkeit.</p>
+              <ul class="therapy-list" style="margin-top: 0.5rem; padding-left: 1.25rem;">
+                <li>Sensomotorisches Training: Sensibilität, Grobmotorik und Feinmotorik, Koordination, Kraft und
+                  Ausdauer</li>
+                <li>Kognitives Training: Konzentration, Merkfähigkeit, exekutive Funktionen, räumliche Wahrnehmung und
+                  Handlungsplanung</li>
+                <li>ADL-Training: Training für mehr Selbstständigkeit im Alltag</li>
+                <li>Hilfsmittelberatung, Wohnraumanpassung und Angehörigenberatung</li>
+              </ul>
+            </div>
+            <div class="leichte-sprache-text">
+              <p>
+                Therapie nach Schlaganfall oder Verletzung im Gehirn.<br>
+                Therapie bei Krankeiten im Gehirn.<br>
+                Übungen für Dinge im Alltag.<br>
+                Übungen für Hände und Körper.<br>
+                Übungen für die Konzentration.<br>
+                Ausprobieren von Hilfsmitteln.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="therapy-section"
+          style="padding-bottom: 2.5rem; border-bottom: 2px solid var(--clr-primary); margin-bottom: 2.5rem; display: flex; gap: 1.5rem; align-items: flex-start;">
+
+          <div class="therapy-text" style="flex: 1;">
+            <h3
+              style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--clr-text); margin-bottom: 1rem; line-height: 1.2;">
+              Orthopädie</h3>
+            <div class="standard-text">
+              <p>Therapie nach Verletzungen bei Erkrankungen der oberen Extremität wie z.B. Frakturen, Operationen,
+                Karpaltunnelsyndrom, oder rheumatischen Erkrankungen und Überlastungs- und Schmerzsymptomatiken (z.B.
+                CRPS, Tennisellbogen, ...).</p>
+              <ul class="therapy-list" style="margin-top: 0.5rem; padding-left: 1.25rem;">
+                <li>Manuelle Therapie der Oberen Extremität</li>
+                <li>Trainingstherapie zur Steigerung von Kraft, Ausdauer und Mobilität</li>
+                <li>Narbenbehandlung</li>
+                <li>Kinesiotaping</li>
+                <li>Gelenkschutzberatung und Schienenanpassung</li>
+                <li>Spiegeltherapie und Graded Motor Imagery</li>
+                <li>ADL-Training</li>
+                <li>Patient*innenedukation und Förderung von Handlungskompetenz</li>
+              </ul>
+            </div>
+            <div class="leichte-sprache-text">
+              <p>
+                Therapie bei Verletzungen der Hand.<br>
+                Therapie bei Schmerzen.<br>
+                Manuelle Therapie.<br>
+                Übungen für die Hand.<br>
+                Patient*innenedukation
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="therapy-section" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+
+          <div class="therapy-text" style="flex: 1;">
+            <h3
+              style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--clr-text); margin-bottom: 1rem; line-height: 1.2;">
+              Inklusion & Menschen mit Behinderung</h3>
+            <div class="standard-text">
+              <p>Therapie und Begleitung von Menschen mit Behinderung für mehr Selbstständigkeit im Alltag, Teilhabe am
+                sozialen und gesellschaftlichen Leben und für den Einstieg in die Arbeitswelt. Der Fokus liegt hier auf
+                den persönlichen Wünschen und Zielen der Klient*innen und die Therapie findet direkt im Alltag statt.
+              </p>
+              <ul class="therapy-list" style="margin-top: 0.5rem; padding-left: 1.25rem;">
+                <li>Alltagstraining zur Erreichung der größtmöglichen Selbstständigkeit</li>
+                <li>Funktionstraining (motorisch &amp; kognitiv)</li>
+                <li>Arbeitsorientiertes Training</li>
+                <li>inklusive Freizeitgestaltung, Förderung sozialer Teilhabe und inklusives Sportangebot</li>
+              </ul>
+            </div>
+            <div class="leichte-sprache-text">
+              <p>
+                Damit weniger Unterstützung benötigt wird.<br>
+                Übungen für die Arbeit.<br>
+                Übungen für die Freizeit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF & PREISE SECTION -->
+  <section class="preise section-pad section-alt" id="ablauf">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 class="section-title">Ablauf und Preise</h2>
+      </div>
+      <div class="preise-layout">
+        <div class="ablauf-steps reveal-up standard-text">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3>Weg zur Therapie</h3>
+              <p>
+                <span class="standard-text">Nehmen Sie gerne telefonisch oder per E-Mail Kontakt auf, damit wir Ihr
+                  Anliegen kurz besprechen und einen Termin vereinbaren können. Um die Therapie dann in Anspruch nehmen
+                  zu können, benötigen Sie eine Überweisung zur Ergotherapie inkl. Hausbesuch von Hausärzt*in oder
+                  Fachärzt*in.</span>
+                <span class="leichte-sprache-text">
+                  Für die Ergotherapie braucht man eine Überweisung.<br>
+                  Die Überweisung schreibt der Arzt oder die Ärztin.<br>
+                  Dann ruft man die Ergotherapeutin an.
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3>Erstgespräch &amp; Therapie</h3>
+              <p>
+                <span class="standard-text">Beim Erstgespräch nehme ich mir für eine ausführliche Anamnese Zeit. Wir
+                  legen gemeinsam Therapieziel und Therapieprozess fest - damit bleibt der Prozess für Sie transparent
+                  und nachvollziehbar.</span>
+                <span class="leichte-sprache-text">
+                  Die Ergotherapeutin redet mit dir über deine Situation und Wünsche.<br>
+                  Zusammen legen wir die Ziele fest.
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3>Absageregelung</h3>
+              <p>
+                <span class="standard-text">Sollten Sie eine Therapieeinheit nicht wahrnehmen können, bitte ich Sie
+                  diese 24h vorher telefonisch, per SMS oder E-Mail abzusagen. Bei späteren Absagen oder Nichterscheinen
+                  muss ich den Termin in Rechnung stellen.</span>
+                <span class="leichte-sprache-text">Sie können einmal nicht zu unserem Termin kommen? Bitte sagen Sie mir
+                  rechtzeitig Bescheid! Am besten einen Tag vorher. Sagen Sie mir zu spät ab, müssen Sie den verpassten
+                  Termin trotzdem bezahlen.</span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h3>Rückerstattung</h3>
+              <p>
+                <span class="standard-text">
+                  Als Wahltherapeutin stelle ich Ihnen nach Abschluss der Therapie eine Honorarnote. Nach Einzahlung
+                  können
+                  Sie die Rechnung bei Ihrer Krankenkassa zur Kostenerstattung einreichen (ca. 80% des Vertragstarifs).
+                  Private Zusatzversicherungen übernehmen häufig die verbleibenden Kosten. Bei finanziellen Härtefällen
+                  biete ich
+                  einen Sozialtarif an – sprechen Sie mich bei Bedarf gerne darauf an.
+                </span>
+                <span class="leichte-sprache-text">
+                  Wenn die Therapie fertig ist, bekommen Sie von mir eine Rechnung. Diese Rechnung bezahlen Sie zuerst
+                  selbst. Dann schicken Sie die Rechnung an Ihre Gesundheits-Kasse. Die Kasse gibt Ihnen einen Teil vom
+                  Geld
+                  zurück. Wenn Sie wenig Geld haben, sprechen Sie mich bitte an. Wir finden eine Lösung.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="leichte-sprache-text" style="margin-bottom: var(--space-lg);">
+          <p>
+            Für die Ergotherapie braucht man eine Überweisung.<br>
+            Die Überweisung schreibt der Arzt oder die Ärztin.<br>
+            Dann ruft man die Ergotherapeutin an.<br>
+            Die Ergotherapeutin redet mit dir über deine Situation.<br>
+            Und über deine Wünsche.<br>
+            Die Ergotherapeutin erklärt dir den Ablauf.<br>
+            Am Ende der Therapie bekommst du eine Rechnung.<br>
+            Diese Rechnung musst du der Therapeutin bezahlen.<br>
+            Die Rechnung kannst du bei der Krankenkassa einreichen.<br>
+            Dann bekommst du einen Teil des Geldes zurück.
+          </p>
+        </div>
+
+        <div class="preisliste reveal-up">
+          <h3 class="preisliste-title">Honorare</h3>
+          <div class="preis-item">
+            <span class="preis-label">Therapieeinheit 30 min</span>
+            <span class="preis-value">€ 55,–</span>
+          </div>
+          <div class="preis-item">
+            <span class="preis-label">Therapieeinheit 45 min</span>
+            <span class="preis-value">€ 75,–</span>
+          </div>
+          <div class="preis-item">
+            <span class="preis-label">Therapieenheit 60 min</span>
+            <span class="preis-value">€ 95,-</span>
+          </div>
+          <div class="preis-item">
+            <span class="preis-label">Hausbesuchszuschlag Hall, Absam, Thaur</span>
+            <span class="preis-value">€ 30,–</span>
+          </div>
+          <div class="preis-item">
+            <span class="preis-label">Hausbesuchszuschlag Mils, Rum, Innsbruck Ost</span>
+            <span class="preis-value">€ 35,–</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- KONTAKT SECTION -->
+  <section class="kontakt section-pad" id="kontakt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 class="section-title">Nehmen Sie Kontakt auf</h2>
+      </div>
+
+      <div class="kontakt-grid reveal-up">
+
+        <!-- Column 1: Standort -->
+        <div class="kontakt-block">
+          <h4>Standort</h4>
+          <p>Hausbesuche in Hall<br>und Umgebung</p>
+        </div>
+
+        <!-- Column 2: Kontakt -->
+        <div class="kontakt-block">
+          <h4>Kontakt</h4>
+          <p><a href="mailto:info@ergotherapie-glatz.at">info@ergotherapie-glatz.at</a><br>
+            <a href="tel:+4367761831690">0677 6183 1690</a>
+          </p>
+        </div>
+
+        <!-- Column 3: Öffnungszeiten -->
+        <div class="kontakt-block">
+          <h4>Öffnungszeiten</h4>
+          <p>Di – Do: 07:00 – 19:00 Uhr<br>
+            <span class="muted-text">nach Terminvereinbarung</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="kontakt-map reveal-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.954752538965!2d11.49842427670731!3d47.28014027116131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d690ab0c5a0fb%3A0xb36a1e94cc4839cf!2sHall%20in%20Tirol!5e0!3m2!1sde!2sat!4v1715015654320!5m2!1sde!2sat"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-icon footer-logo">
+          <svg viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- cap -->
+            <path d="M8 34 C8 14 52 14 52 34 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+              fill="none" />
+            <!-- cap underside / gills line -->
+            <line x1="8" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            <!-- stem -->
+            <path d="M24 34 L22 56 Q30 60 38 56 L36 34" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"
+              fill="none" />
+            <!-- skirt (annulus) -->
+            <path d="M20 42 Q30 46 40 42" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none" />
+            <!-- scattered filled dots inside cap -->
+            <circle cx="18" cy="29" r="1.3" fill="currentColor" opacity="0.85" />
+            <circle cx="28" cy="23" r="1.2" fill="currentColor" opacity="0.85" />
+            <circle cx="38" cy="26" r="1.5" fill="currentColor" opacity="0.85" />
+            <circle cx="34" cy="21" r="1" fill="currentColor" opacity="0.85" />
+            <circle cx="44" cy="30" r="1.3" fill="currentColor" opacity="0.85" />
+            <circle cx="24" cy="27" r="1.1" fill="currentColor" opacity="0.85" />
+            <circle cx="33" cy="29" r="1.2" fill="currentColor" opacity="0.85" />
+          </svg>
+        </div>
+        <div>
+          <p class="footer-name">Victoria Glatz, BSc</p>
+          <p class="footer-subtitle">Praxis für Ergotherapie</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#home">Home</a>
+        <a href="#therapie">Therapie</a>
+        <a href="#ablauf">Preise</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Victoria Glatz, BSc – Praxis für Ergotherapie · Erstellt mit ♥ von Victoria Glatz</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
