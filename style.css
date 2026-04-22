@@ -130,13 +130,8 @@ body.high-contrast .lead-text {
   line-height: 1.6;
 }
 
-body.high-contrast .hero-img {
-  filter: grayscale(100%);
-  opacity: 0.25;
-}
-
-body.high-contrast .hero-overlay {
-  background: rgba(0, 0, 0, 0.75);
+body.high-contrast .hero-image-wrapper {
+  display: none;
 }
 
 body.high-contrast .therapy-card-img--placeholder {
