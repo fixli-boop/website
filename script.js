@@ -300,3 +300,26 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     }
   }, { passive: true });
 })();
+
+/* ═══════════════════════════════════════════════════════════
+   8. VACATION POPUP
+═══════════════════════════════════════════════════════════ */
+(function vacationPopup() {
+  const popup = $('#vacation-popup');
+  const closeBtn = $('#close-popup');
+  
+  if (!popup || !closeBtn) return;
+
+  // Check if it was closed in this session
+  if (!sessionStorage.getItem('vacationPopupClosed')) {
+    // Show after a short delay
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 1000);
+  }
+
+  closeBtn.addEventListener('click', () => {
+    popup.classList.remove('show');
+    sessionStorage.setItem('vacationPopupClosed', 'true');
+  });
+})();
