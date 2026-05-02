@@ -905,9 +905,7 @@ ul {
 }
 
 .preis-value {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 0.9rem;
   color: var(--clr-dark);
   white-space: nowrap;
 }
@@ -1520,4 +1518,31 @@ ul {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
   }
+}
+
+/* ── Impressum Text ──────────────────────────────────────── */
+.impressum-text {
+  font-size: 1rem;
+  color: var(--clr-dark);
+  line-height: 1.7;
+  margin-bottom: 0.3rem;
+}
+
+.impressum-text a {
+  color: var(--clr-primary);
+}
+
+/* ── Therapy Icon Images ─────────────────────────────────── */
+.therapy-icon-img {
+  flex-shrink: 0;
+  width: 125px;
+  height: 125px;
+  align-self: flex-start;
+}
+
+.therapy-icon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(55%) sepia(28%) saturate(500%) hue-rotate(352deg) brightness(0.75);
 }
