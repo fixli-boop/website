@@ -1378,6 +1378,16 @@ ul {
   }
 
   /* Mobile nav */
+  .header-inner {
+    padding: 0 1rem;
+    gap: 0.5rem;
+  }
+
+  .a11y-controls {
+    margin-right: 0;
+    gap: 0.25rem;
+  }
+
   .nav-toggle {
     display: flex;
     z-index: 10;
