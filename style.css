@@ -931,11 +931,23 @@ ul {
 .ueber-mich-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "img part1"
+    "img part2";
   gap: var(--space-xl);
   align-items: start;
 }
 
+.ueber-mich-text-part1 {
+  grid-area: part1;
+}
+
+.ueber-mich-text-part2 {
+  grid-area: part2;
+}
+
 .ueber-mich-img {
+  grid-area: img;
   position: relative;
   width: 80%;
   margin: 0 auto;
@@ -1341,6 +1353,10 @@ ul {
 
   .ueber-mich-layout {
     grid-template-columns: 1fr;
+    grid-template-areas: 
+      "part1"
+      "img"
+      "part2";
     max-width: 600px;
     margin: 0 auto;
   }
@@ -1559,7 +1575,7 @@ ul {
   background-color: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: 12px;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
   z-index: 2000;
   padding: 2rem;
   transform: translateY(20px);
@@ -1635,10 +1651,57 @@ body.high-contrast .vacation-popup p {
     max-width: none;
     padding: 1.5rem;
   }
+
   .vacation-popup h3 {
     font-size: 1.6rem;
   }
+
   .vacation-popup p {
     font-size: 1.05rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THERAPIE SECTION REORDERING
+═══════════════════════════════════════════════════════════ */
+.therapy-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon heading"
+    "icon text";
+  column-gap: 1.5rem;
+  align-items: start;
+}
+
+.therapy-section .therapy-heading {
+  grid-area: heading;
+}
+
+.therapy-section .therapy-icon-img {
+  grid-area: icon;
+}
+
+.therapy-section .therapy-text {
+  grid-area: text;
+}
+
+@media (max-width: 768px) {
+  .therapy-section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "icon"
+      "text";
+    column-gap: 0;
+  }
+
+  .therapy-section .therapy-heading {
+    text-align: center;
+  }
+
+  .therapy-section .therapy-icon-img {
+    justify-self: center;
+    margin-bottom: 1.5rem;
   }
 }
