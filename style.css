@@ -1705,3 +1705,49 @@ body.high-contrast .vacation-popup p {
     margin-bottom: 1.5rem;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   LEICHTE SPRACHE UNIFIED STYLING
+═══════════════════════════════════════════════════════════ */
+body.leichte-sprache section:not(.hero) p,
+body.leichte-sprache section:not(.hero) li,
+body.leichte-sprache section:not(.hero) h2,
+body.leichte-sprache section:not(.hero) h3,
+body.leichte-sprache section:not(.hero) .quali-item span,
+body.leichte-sprache section:not(.hero) .leichte-sprache-text {
+  color: #000000 !important;
+}
+
+.leichte-sprache-text,
+.leichte-sprache-text p,
+.leichte-sprache-text span,
+.leichte-sprache-text ul,
+.leichte-sprache-text li {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+}
+
+.leichte-sprache-text p,
+.leichte-sprache-text ul {
+  margin-bottom: 1.5rem !important;
+}
+
+.leichte-sprache-text p:last-child,
+.leichte-sprache-text ul:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Enlarge Über Mich extra sections in Leichte Sprache */
+body.leichte-sprache .ueber-mich-text-part2 h3 {
+  font-size: 1.75rem !important;
+  margin-top: 2rem !important;
+}
+
+body.leichte-sprache .qualifikationen .quali-item {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+}
+
+body.leichte-sprache .quali-dot {
+  margin-top: 0.35rem;
+}
